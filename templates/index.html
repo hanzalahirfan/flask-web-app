@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Education System</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        form { margin: auto; width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        input, button { margin: 5px; padding: 8px; width: 90%; }
+    </style>
+</head>
+<body>
+    <h2>Pakistani Education System!</h2>
+    <form method="POST">
+        <label>Enter marks in subject 1:</label>
+        <input type="number" name="marks1" required><br>
+
+        <label>Enter marks in subject 2:</label>
+        <input type="number" name="marks2" required><br>
+
+        <input type="checkbox" name="pm_son" value="yes"> Are you a son of the Prime Minister? <br>
+
+        <button type="submit">Check Result</button>
+    </form>
+    
+    <h3>{{ result }}</h3>
+</body>
+</html>
